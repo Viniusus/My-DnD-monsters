@@ -1,0 +1,213 @@
+{
+	"siteVersion": "1.154.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Vega",
+				"abbreviation": "VGA",
+				"full": "Vega",
+				"url": "",
+				"authors": [
+					"Vinius"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1651017404,
+		"dateLastModified": 1651017404
+	},
+	"monster": [
+		{
+			"name": "Vince Migurdia",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"shifter"
+				]
+			},
+			"source": "Vega",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item half plate armor|phb}"
+					]
+				},
+				{
+					"ac": 17,
+					"condition": "{@spell haste}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "27d8 + 54",
+				"average": 175
+			},
+			"speed": {
+				"walk": {
+					"number": 40,
+					"condition": "80 ft. haste"
+				}
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 20,
+			"wis": 10,
+			"cha": 12,
+			"passive": 14,
+			"cr": "11",
+			"level": 11,
+			"shortName": "Vince",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Sylvan",
+				"Undercommon",
+				"Common"
+			],
+			"languageTags": [
+				"S",
+				"U",
+				"C"
+			],
+			"save": {
+				"str": "+4",
+				"con": "+6",
+				"int": "+9",
+				"wis": "+4"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"perception": "+4"
+			},
+			"resist": [
+				"force"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Vince Migurdia is a 11th level spellcaster, his spellcasting ability is Intelligence (CD 15). He can cast the following spells as long as he wields his longsword."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}"
+							]
+						}
+					},
+					"daily": {
+						"3e": [
+							"{@spell catapult|XGE}",
+							"{@spell snare|XGE}"
+						],
+						"2e": [
+							"{@spell earthbind|XGE}",
+							"{@spell pyrotechnics|XGE}",
+							"{@spell web}"
+						],
+						"1e": [
+							"{@spell counterspell}",
+							"{@spell dispel magic}",
+							"{@spell passwall}",
+							"{@spell thunder step|XGE}"
+						]
+					},
+					"constant": [
+						"{@spell expeditious retreat}"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"T"
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Vince adds 3 to its AC against one melee attack that would hit it. To do so, Vince  must see the attacker and be wielding a melee weapon"
+					]
+				},
+				{
+					"name": "Retreat",
+					"entries": [
+						"As a reaction, Vince can move 10 ft. away from a creature that ended its turn 5 ft. away from it."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Vince can make two weapon attacks or use a Lightning-Imbued Strike."
+					]
+				},
+				{
+					"name": "Longsword (Arcane Jolt)",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d10 + 7}) slashing damage, plus 7 ({@damage 2d6}) force damage."
+					]
+				},
+				{
+					"name": "Dagger (Arcane Jolt)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d4 + 5}) slashing damage, plus 7 ({@damage 2d6}) force damage."
+					]
+				},
+				{
+					"name": "Lightning-Imbued Strike",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d10 + 7}) slashing damage, plus 14 ({@damage 2d8 + 5}) lightning damage, plus 7 ({@damage 2d6}) force damage plus {@h} 9 ({@damage 2d8}) lightning damage to another target within 5 ft. of it."
+					]
+				}
+			],
+			"damageTags": [
+				"L",
+				"O",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Dash",
+					"entries": [
+						"Vince takes the Dash action as a bonus action."
+					]
+				}
+			],
+			"tokenUrl": "https://s3.amazonaws.com/files.d20.io/images/281375169/lhCYf68kCTnJtfLIyhP71g/max.png?1650413552",
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Vince can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb"
+			]
+		}
+	]
+}
